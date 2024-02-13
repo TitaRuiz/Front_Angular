@@ -1,0 +1,17 @@
+<h1>Ingreso de Factura</h1>
+<div>
+    <label>Codigo de Cliente</label>
+    <input type="number" [(ngModel)]="codigo">
+    <br>
+    <label>Forma de pago</label>
+    <input type="text" [(ngModel)]="fPago">
+    <br>
+    <label>Dirección de entrega</label>
+    <input type="text" [(ngModel)]="dEntrega">
+    <br>
+    <label>Nombre del Producto</label>
+    <input type="text" [(ngModel)]="nProducto">
+    <br>
+    <app-detalle-factura [nProductoHijo]="nProducto"></app-detalle-factura>
+</div>
+
