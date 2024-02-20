@@ -1,0 +1,22 @@
+<div>
+    <table>
+      <tr>
+        <th>Inmuebles disponibles</th>
+        
+      </tr>
+      @for(elemento of inmuebles; track elemento.referencia) {
+      <tr>
+        <a
+          [routerLink]="['/detalle', elemento.referencia]"
+          
+        >
+          <td>{{ elemento.referencia }}</td>
+         
+          <td><img  src="{{ elemento.img }}" alt="" /></td>
+          <td>{{ elemento.descripcion }}</td>
+        </a>
+        
+      </tr>
+      }
+    </table>
+  </div>

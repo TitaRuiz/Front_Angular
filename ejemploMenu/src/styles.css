@@ -1,0 +1,12 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/* You can add global styles to this file, and also import other style files */
+    font-size: 12px;
+}
+:root{
+    color-scheme: light dark;
+}
+h1{
+    color:coral;
+    font-size: 20px;
+    text-align: center;
+}

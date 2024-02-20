@@ -1,7 +1,18 @@
-<a routerLink="/arma" routerLinkActive="router-link-active" >Arma tu Pc</a>
 
-<app-empleado-dinamico></app-empleado-dinamico>
+
+<h1>Angular Router</h1>
+<nav>
+  <a routerLink="/arma" routerLinkActive="active" ariaCurrentWhenActive="page">Arma tu PC</a> 
+  <a routerLink="/reserva" routerLinkActive="active" ariaCurrentWhenActive="page">Reserva de vuelos </a> 
+  <a routerLink="/empleado" routerLinkActive="active" ariaCurrentWhenActive="page">Registro de Empleado </a> 
+</nav>
+<router-outlet></router-outlet>
+
+
+<!-- <app-empleado-dinamico></app-empleado-dinamico>
 <app-arma-pc></app-arma-pc>
-<app-reserva-vuelos></app-reserva-vuelos>
+<app-reserva-vuelos></app-reserva-vuelos> -->
+
 
 <router-outlet></router-outlet>
+<!-- Routed components go here -->

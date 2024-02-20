@@ -1,0 +1,27 @@
+<h1>TIENDA ONLINE DE PRODUCTOS INFORMATICOS</h1>
+<div>
+    <table>
+        <tr>
+            <th>Id producto</th>
+            <th>nombre</th>
+            <th>descripción</th>
+            <th>imagen</th>
+            <th>precio</th>
+        </tr>
+       
+            @for(elemento of productos; track elemento.productoId){
+               <tr> 
+                 <td>
+                    <a [routerLink]="['/detalle',elemento.productoId]" >
+                        {{elemento.productoId}}
+                    </a>
+                    </td>
+                <td>{{elemento.nombre}}</td>
+                <td>{{elemento.descripcion}}</td>
+                <td><img width="100px" src="{{elemento.imagen}}" alt="{{elemento.nombre}}"></td>
+                <td>{{elemento.precio}}</td>
+         </tr>
+        }
+       
+    </table>
+</div>

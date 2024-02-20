@@ -5,8 +5,9 @@ import { EmpleadoDinamicoComponent } from './empleado-dinamico/empleado-dinamico
 
 export const routes: Routes = 
 [
-    {path:"arma", component:ArmaPCComponent},
-    {path:"reserva", component:ReservaVuelosComponent},
-    {path:"emplead", component:EmpleadoDinamicoComponent}
+    {path:'arma', component:ArmaPCComponent},
+    {path:'reserva', component:ReservaVuelosComponent},
+    {path:'empleado', component:EmpleadoDinamicoComponent}
 
 ];
+
