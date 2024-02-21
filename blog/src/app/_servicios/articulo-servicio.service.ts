@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Articulo } from '../_modelo/articulo';
 
 @Injectable({
   providedIn: 'root'
@@ -46,5 +47,9 @@ export class ArticuloServicioService {
 
   obtenerTodosArticulos(){
     return this.articulos;
+  }
+
+  altaArticulo(articulo:Articulo){
+    this.articulos.push(articulo);
   }
 }
