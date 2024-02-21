@@ -7,8 +7,7 @@
       @for(elemento of inmuebles; track elemento.referencia) {
       <tr>
         <a
-          [routerLink]="['/detalle', elemento.referencia]"
-          
+          [routerLink]="['/detalle', elemento.referencia]"         
         >
           <td>{{ elemento.referencia }}</td>
          

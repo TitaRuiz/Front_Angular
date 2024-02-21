@@ -18,7 +18,4 @@ export class Hijo2Component {
     this.eventoHaciaPadre.emit(
       this.asignaturaSeleccionada);
   }
-
-
-
 }
