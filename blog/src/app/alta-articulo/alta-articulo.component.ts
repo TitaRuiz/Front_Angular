@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { Articulo } from '../_modelo/articulo';
 import { ArticuloServicioService } from '../_servicios/articulo-servicio.service';
 
@@ -13,13 +13,14 @@ import { ArticuloServicioService } from '../_servicios/articulo-servicio.service
 })
 export class AltaArticuloComponent {
 
-  constructor(private articuloServicio: ArticuloServicioService){}
+  constructor(private articuloServicio: ArticuloServicioService,  private router:Router){}
 
   articulo:Articulo = new Articulo();
 
   alta():void{
     this.articuloServicio.altaArticulo(this.articulo); 
     console.log(this.articuloServicio.obtenerTodosArticulos());  
+    this.router.navigate(['/']);
   }
 
 }
