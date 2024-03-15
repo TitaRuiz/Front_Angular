@@ -1,0 +1,17 @@
+<table>
+    <caption>Factura {{idFactura}}</caption>
+    <tr>
+        <th>Id Consecutivo</th>
+        <th>Concepto</th>
+        <th>Importe</th>
+    </tr>
+    @for(elemento of detalles; track elemento.idConsecutivo){
+        <tr>
+            <td>{{elemento.idConsecutivo}}</td>
+            <td>{{elemento.concepto}}</td>
+            <td>{{elemento.importe}}</td>
+           
+        </tr>
+
+}
+</table>

@@ -1,0 +1,28 @@
+<h1>Consulta de cliente</h1>
+<p>IdCliente : {{cliente.idCliente}}</p>
+<p>nombre : {{cliente.nombre}}</p>
+<p>telefono: {{cliente.telefono}}</p>
+<p>direccion : {{cliente.direccion}}</p>
+<table>
+    <tr>
+        <th>Id Factura</th>
+        <th>Tipo de Pago</th>
+        <th>fecha</th>
+        <th>+Info</th>
+    </tr>
+    @for(elemento of cliente.facturas; track elemento.idFactura){
+        <tr>
+            <td>{{elemento.idFactura}}</td>
+            <td>{{elemento.tipoPago}}</td>
+            <td>{{elemento.fecha}}</td>
+            <td><a [routerLink]="['/detalle',elemento.idFactura]" >
+              <button>+Info</button>
+            </a> </td>
+           
+        </tr>
+
+}
+</table>
+
+
+
